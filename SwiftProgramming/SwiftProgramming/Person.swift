@@ -42,8 +42,6 @@ protocol Friendable
 // MARK: - Person Class
 class Person: Likeable, Friendable, CustomDebugStringConvertible
 {
-    var isCool: Bool { return true }
-    
     // MARK: Person Properties
     var firstName: String
     var lastName: String
