@@ -30,6 +30,8 @@ https://github.com/AboutObjects/swiftui-books
 
 https://github.com/AboutObjectsTraining/visionos-catalogs
 
+https://github.com/AboutObjectsTraining/VisionProExamples
+
 ## Additional Resources
 
 Developer.app on macOS (ships with Xcode)
