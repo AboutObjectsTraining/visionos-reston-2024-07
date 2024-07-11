@@ -10,6 +10,10 @@ import Foundation
     private let booksDataStore: DataStore
     private(set) var bookCatalog: BookCatalog
     
+    var hasBooks: Bool {
+        !bookCatalog.books.isEmpty
+    }
+
     init(booksDataStore: DataStore = DataStore(storeName: booksStoreName)) {
         self.booksDataStore = booksDataStore
         self.bookCatalog = BookCatalog(title: "Empty", books: [])

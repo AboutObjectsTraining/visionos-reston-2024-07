@@ -16,5 +16,6 @@ struct CatalogsApp: App {
             ContentView(viewModel: viewModel)
         }
         .defaultSize(width: 640, height: 960)
+        .windowResizability(.contentSize)
     }
 }

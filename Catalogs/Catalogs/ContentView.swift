@@ -27,6 +27,9 @@ struct ContentView: View {
                         Label("Books", systemImage: "books.vertical.fill")
                     }
                     .tag(Tab.books)
+                    .onAppear() {
+                        viewModel.loadBooks()
+                    }
                 SpatialObjectBrowser()
                     .tabItem {
                         Label("Models", systemImage: "view.3d")
@@ -44,6 +47,7 @@ struct ContentView: View {
                 selectedTab.rawValue
             )
         }
+        .frame(minWidth: 600, maxWidth: 1000, minHeight: 800)
     }
 }
 
