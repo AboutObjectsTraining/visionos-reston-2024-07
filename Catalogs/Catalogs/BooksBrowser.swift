@@ -21,7 +21,18 @@ struct BooksBrowser: View {
     var bookList: some View {
         List {
             ForEach(viewModel.bookCatalog.books) { book in
-                BookCell(book: book)
+                NavigationLink {
+                    BookDetail(book: book)
+                        .environment(viewModel)
+                } label: {
+                    BookCell(book: book)
+                }
+            }
+            .onMove { offsets, offset in
+                viewModel.moveBooks(atOffsets: offsets, toOffset: offset)
+            }
+            .onDelete { offsets in
+                viewModel.removeBooks(fromOffsets: offsets)
             }
         }
     }
@@ -33,6 +44,9 @@ struct BooksBrowser: View {
             } else {
                 bookList
             }
+        }
+        .toolbar {
+            EditButton()
         }
     }
 }
@@ -50,6 +64,9 @@ struct BookCell: View {
                     Text(book.author)
                 }
             }
+            Spacer()
+            ProgressView(value: book.percentComplete)
+                .progressViewStyle(CompletionProgressViewStyle())
         }
     }
 }

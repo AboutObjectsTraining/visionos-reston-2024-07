@@ -29,6 +29,8 @@
 		B4C79E132C40306800807F91 /* Treasure Island.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C79E022C40306800807F91 /* Treasure Island.jpg */; };
 		B4C79E142C40306800807F91 /* War and Peace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C79E032C40306800807F91 /* War and Peace.jpg */; };
 		B4C79E152C40306800807F91 /* War of the Worlds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C79E042C40306800807F91 /* War of the Worlds.jpg */; };
+		B4C79E172C405AA500807F91 /* CompletionProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C79E162C405AA500807F91 /* CompletionProgressViewStyle.swift */; };
+		B4C79E192C405EE400807F91 /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C79E182C405EE400807F91 /* BookDetail.swift */; };
 		B4F2BD0E2C3F0AB600388EDF /* BooksBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2BD0D2C3F0AB600388EDF /* BooksBrowser.swift */; };
 		B4F2BD112C3F14AB00388EDF /* ObjectCatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F2BD0F2C3F14AB00388EDF /* ObjectCatalog.json */; };
 		B4F2BD122C3F14AB00388EDF /* BookCatalog.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F2BD102C3F14AB00388EDF /* BookCatalog.json */; };
@@ -74,6 +76,8 @@
 		B4C79E022C40306800807F91 /* Treasure Island.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Treasure Island.jpg"; sourceTree = "<group>"; };
 		B4C79E032C40306800807F91 /* War and Peace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "War and Peace.jpg"; sourceTree = "<group>"; };
 		B4C79E042C40306800807F91 /* War of the Worlds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "War of the Worlds.jpg"; sourceTree = "<group>"; };
+		B4C79E162C405AA500807F91 /* CompletionProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionProgressViewStyle.swift; sourceTree = "<group>"; };
+		B4C79E182C405EE400807F91 /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
 		B4F2BD0D2C3F0AB600388EDF /* BooksBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksBrowser.swift; sourceTree = "<group>"; };
 		B4F2BD0F2C3F14AB00388EDF /* ObjectCatalog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ObjectCatalog.json; sourceTree = "<group>"; };
 		B4F2BD102C3F14AB00388EDF /* BookCatalog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BookCatalog.json; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				B40209642C3F053E00D6C61D /* ContentView.swift */,
 				B4F2BD1B2C3F32F700388EDF /* CatalogsViewModel.swift */,
 				B4F2BD0D2C3F0AB600388EDF /* BooksBrowser.swift */,
+				B4C79E182C405EE400807F91 /* BookDetail.swift */,
+				B4C79E162C405AA500807F91 /* CompletionProgressViewStyle.swift */,
 				B40209682C3F054000D6C61D /* Assets.xcassets */,
 				B402096D2C3F054000D6C61D /* Info.plist */,
 				B402096A2C3F054000D6C61D /* Preview Content */,
@@ -322,6 +328,8 @@
 				B4F2BD0E2C3F0AB600388EDF /* BooksBrowser.swift in Sources */,
 				B40209652C3F053E00D6C61D /* ContentView.swift in Sources */,
 				B4F2BD182C3F1E6100388EDF /* DataStore.swift in Sources */,
+				B4C79E192C405EE400807F91 /* BookDetail.swift in Sources */,
+				B4C79E172C405AA500807F91 /* CompletionProgressViewStyle.swift in Sources */,
 				B4F2BD1A2C3F1EEB00388EDF /* BookCatalog.swift in Sources */,
 				B40209632C3F053E00D6C61D /* CatalogsApp.swift in Sources */,
 			);

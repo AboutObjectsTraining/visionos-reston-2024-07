@@ -34,4 +34,22 @@ extension CatalogsViewModel {
             }
         }
     }
+    
+    func moveBooks(atOffsets offsets: IndexSet, toOffset offset: Int) {
+        bookCatalog.move(fromOffsets: offsets, toOffset: offset)
+        save()
+    }
+    
+    func removeBooks(fromOffsets offsets: IndexSet) {
+        bookCatalog.remove(atOffsets: offsets)
+        save()
+    }
+    
+    func save() {
+        do {
+            try booksDataStore.save(bookCatalog: bookCatalog)
+        } catch {
+            print(error)
+        }
+    }
 }

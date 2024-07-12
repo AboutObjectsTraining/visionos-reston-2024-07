@@ -28,3 +28,14 @@ import Observation
         self.books = books
     }
 }
+
+extension BookCatalog {
+    
+    func remove(atOffsets indexSet: IndexSet) {
+        books.remove(atOffsets: indexSet)
+    }
+    
+    func move(fromOffsets offsets: IndexSet, toOffset offset: Int) {
+        books.move(fromOffsets: offsets, toOffset: offset)
+    }
+}

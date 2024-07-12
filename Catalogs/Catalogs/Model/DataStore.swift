@@ -5,6 +5,12 @@
 
 import Foundation
 
+enum StoreError: Error {
+    case unableToEncode(message: String)
+    case unableToDecode(message: String)
+    case unableToSave(message: String)
+}
+
 final class DataStore {
     let storeName: String
     let bundle: Bundle
@@ -45,5 +51,17 @@ final class DataStore {
     func fetchBookCatalog() async throws -> BookCatalog {
         let (data, _) = try await URLSession.shared.data(from: storeFileUrl)
         return try decoder.decode(codableType, from: data)
+    }
+    
+    func save(bookCatalog: BookCatalog) throws {
+        guard let data = try? encoder.encode(bookCatalog) else {
+            throw StoreError.unableToEncode(message: "Unable to encode \(bookCatalog)")
+        }
+        
+        do {
+            try data.write(to: storeFileUrl)
+        } catch {
+            throw StoreError.unableToSave(message: "Unable to write to \(storeFileUrl); error was \(error)")
+        }
     }
 }
