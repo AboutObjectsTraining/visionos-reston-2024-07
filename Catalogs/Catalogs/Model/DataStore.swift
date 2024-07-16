@@ -17,8 +17,6 @@ final class DataStore {
     
     let storeType = "json"
     
-    let codableType = BookCatalog.self
-    
     let decoder = JSONDecoder()
     let encoder = {
         let encoder = JSONEncoder()
@@ -50,7 +48,12 @@ final class DataStore {
     
     func fetchBookCatalog() async throws -> BookCatalog {
         let (data, _) = try await URLSession.shared.data(from: storeFileUrl)
-        return try decoder.decode(codableType, from: data)
+        return try decoder.decode(BookCatalog.self, from: data)
+    }
+    
+    func fetchObjectCatalog() async throws -> SpatialObjectCatalog {
+        let (data, _) = try await URLSession.shared.data(from: storeFileUrl)
+        return try decoder.decode(SpatialObjectCatalog.self, from: data)
     }
     
     func save(bookCatalog: BookCatalog) throws {

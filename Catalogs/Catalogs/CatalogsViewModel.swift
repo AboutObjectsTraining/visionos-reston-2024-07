@@ -7,20 +7,48 @@ import Foundation
 
 @Observable final class CatalogsViewModel {
     private static let booksStoreName = "BookCatalog"
-    private let booksDataStore: DataStore
-    private(set) var bookCatalog: BookCatalog
+    private static let objectsStoreName = "ObjectCatalog"
     
-    var hasBooks: Bool {
-        !bookCatalog.books.isEmpty
-    }
+    private let bookDataStore: DataStore
+    private let objectDataStore: DataStore
+    
+    private(set) var bookCatalog: BookCatalog
+    private(set) var objectCatalog: SpatialObjectCatalog
+    
+    var isShowingImmersiveSpace = false
+    var selectedObject: SpatialObject?
+    
+    var hasBooks: Bool { !bookCatalog.books.isEmpty }
+    var hasObjects: Bool { !objectCatalog.objects.isEmpty }
 
-    init(booksDataStore: DataStore = DataStore(storeName: booksStoreName)) {
-        self.booksDataStore = booksDataStore
+    init(booksDataStore: DataStore = DataStore(storeName: booksStoreName),
+         objectDataStore: DataStore = DataStore(storeName: objectsStoreName)) {
+        self.bookDataStore = booksDataStore
+        self.objectDataStore = objectDataStore
         self.bookCatalog = BookCatalog(title: "Empty", books: [])
+        self.objectCatalog = SpatialObjectCatalog(title: "Empty", objects: [])
     }
 }
 
-// MARK: - Actions
+// MARK: - Spatial Object Actions
+extension CatalogsViewModel {
+    
+    func loadObjects() {
+        guard objectCatalog.objects.isEmpty else { return }
+        
+        Task {
+            do {
+                objectCatalog = try await objectDataStore.fetchObjectCatalog()
+            } catch {
+                print("Unable to fetch \(SpatialObjectCatalog.self) from \(objectDataStore) due to \(error)")
+            }
+        }
+    }
+    
+    // TODO: implement move() method
+}
+
+// MARK: - Book Actions
 extension CatalogsViewModel {
     
     func loadBooks() {
@@ -28,9 +56,9 @@ extension CatalogsViewModel {
         
         Task {
             do {
-                bookCatalog = try await booksDataStore.fetchBookCatalog()
+                bookCatalog = try await bookDataStore.fetchBookCatalog()
             } catch {
-                print("Unable to fetch BookCatalog from \(booksDataStore) due to \(error)")
+                print("Unable to fetch \(BookCatalog.self) from \(bookDataStore) due to \(error)")
             }
         }
     }
@@ -47,7 +75,7 @@ extension CatalogsViewModel {
     
     func save() {
         do {
-            try booksDataStore.save(bookCatalog: bookCatalog)
+            try bookDataStore.save(bookCatalog: bookCatalog)
         } catch {
             print(error)
         }

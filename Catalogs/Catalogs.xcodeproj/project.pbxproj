@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B401DC6F2C41A8120032DD14 /* Directors Chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC5D2C41A8120032DD14 /* Directors Chair.usdz */; };
+		B401DC702C41A8120032DD14 /* Nike Pegasus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC5E2C41A8120032DD14 /* Nike Pegasus.usdz */; };
+		B401DC712C41A8120032DD14 /* Toy Biplane_full.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC5F2C41A8120032DD14 /* Toy Biplane_full.png */; };
+		B401DC722C41A8120032DD14 /* Toy Biplane.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC602C41A8120032DD14 /* Toy Biplane.png */; };
+		B401DC732C41A8120032DD14 /* Toy Biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC612C41A8120032DD14 /* Toy Biplane.usdz */; };
+		B401DC742C41A8120032DD14 /* Toy Car_full.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC622C41A8120032DD14 /* Toy Car_full.png */; };
+		B401DC752C41A8120032DD14 /* Toy Car.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC632C41A8120032DD14 /* Toy Car.png */; };
+		B401DC762C41A8120032DD14 /* Toy Car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC642C41A8120032DD14 /* Toy Car.usdz */; };
+		B401DC772C41A8120032DD14 /* Toy Drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC652C41A8120032DD14 /* Toy Drummer.usdz */; };
+		B401DC782C41A8120032DD14 /* Toy Robot_full.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC662C41A8120032DD14 /* Toy Robot_full.png */; };
+		B401DC792C41A8120032DD14 /* Toy Robot.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC672C41A8120032DD14 /* Toy Robot.png */; };
+		B401DC7A2C41A8120032DD14 /* Toy Robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC682C41A8120032DD14 /* Toy Robot.usdz */; };
+		B401DC7B2C41A8120032DD14 /* Toy Rocket_full.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC692C41A8120032DD14 /* Toy Rocket_full.png */; };
+		B401DC7C2C41A8120032DD14 /* Toy Rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = B401DC6A2C41A8120032DD14 /* Toy Rocket.png */; };
+		B401DC7D2C41A8120032DD14 /* Toy Rocket.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC6B2C41A8120032DD14 /* Toy Rocket.usdz */; };
+		B401DC7E2C41A8120032DD14 /* TV Set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC6C2C41A8120032DD14 /* TV Set.usdz */; };
+		B401DC7F2C41A8120032DD14 /* Watering Can.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B401DC6D2C41A8120032DD14 /* Watering Can.usdz */; };
+		B401DC812C41B18C0032DD14 /* SpatialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401DC802C41B18C0032DD14 /* SpatialObject.swift */; };
+		B401DC832C41B2310032DD14 /* SpatialObjectCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401DC822C41B2310032DD14 /* SpatialObjectCatalog.swift */; };
+		B401DC852C41B7DC0032DD14 /* ObjectsBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401DC842C41B7DC0032DD14 /* ObjectsBrowser.swift */; };
+		B401DC872C41B81A0032DD14 /* SettingsBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401DC862C41B81A0032DD14 /* SettingsBrowser.swift */; };
+		B401DC892C41C0EA0032DD14 /* ListImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401DC882C41C0EA0032DD14 /* ListImage.swift */; };
+		B401DC8B2C41CA4D0032DD14 /* SpatialObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401DC8A2C41CA4D0032DD14 /* SpatialObjectsView.swift */; };
 		B40209612C3F053E00D6C61D /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = B40209602C3F053E00D6C61D /* RealityKitContent */; };
 		B40209632C3F053E00D6C61D /* CatalogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40209622C3F053E00D6C61D /* CatalogsApp.swift */; };
 		B40209652C3F053E00D6C61D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40209642C3F053E00D6C61D /* ContentView.swift */; };
@@ -51,6 +74,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B401DC5D2C41A8120032DD14 /* Directors Chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Directors Chair.usdz"; sourceTree = "<group>"; };
+		B401DC5E2C41A8120032DD14 /* Nike Pegasus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Nike Pegasus.usdz"; sourceTree = "<group>"; };
+		B401DC5F2C41A8120032DD14 /* Toy Biplane_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Biplane_full.png"; sourceTree = "<group>"; };
+		B401DC602C41A8120032DD14 /* Toy Biplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Biplane.png"; sourceTree = "<group>"; };
+		B401DC612C41A8120032DD14 /* Toy Biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Toy Biplane.usdz"; sourceTree = "<group>"; };
+		B401DC622C41A8120032DD14 /* Toy Car_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Car_full.png"; sourceTree = "<group>"; };
+		B401DC632C41A8120032DD14 /* Toy Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Car.png"; sourceTree = "<group>"; };
+		B401DC642C41A8120032DD14 /* Toy Car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Toy Car.usdz"; sourceTree = "<group>"; };
+		B401DC652C41A8120032DD14 /* Toy Drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Toy Drummer.usdz"; sourceTree = "<group>"; };
+		B401DC662C41A8120032DD14 /* Toy Robot_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Robot_full.png"; sourceTree = "<group>"; };
+		B401DC672C41A8120032DD14 /* Toy Robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Robot.png"; sourceTree = "<group>"; };
+		B401DC682C41A8120032DD14 /* Toy Robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Toy Robot.usdz"; sourceTree = "<group>"; };
+		B401DC692C41A8120032DD14 /* Toy Rocket_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Rocket_full.png"; sourceTree = "<group>"; };
+		B401DC6A2C41A8120032DD14 /* Toy Rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Toy Rocket.png"; sourceTree = "<group>"; };
+		B401DC6B2C41A8120032DD14 /* Toy Rocket.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Toy Rocket.usdz"; sourceTree = "<group>"; };
+		B401DC6C2C41A8120032DD14 /* TV Set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "TV Set.usdz"; sourceTree = "<group>"; };
+		B401DC6D2C41A8120032DD14 /* Watering Can.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Watering Can.usdz"; sourceTree = "<group>"; };
+		B401DC802C41B18C0032DD14 /* SpatialObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialObject.swift; sourceTree = "<group>"; };
+		B401DC822C41B2310032DD14 /* SpatialObjectCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialObjectCatalog.swift; sourceTree = "<group>"; };
+		B401DC842C41B7DC0032DD14 /* ObjectsBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsBrowser.swift; sourceTree = "<group>"; };
+		B401DC862C41B81A0032DD14 /* SettingsBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBrowser.swift; sourceTree = "<group>"; };
+		B401DC882C41C0EA0032DD14 /* ListImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImage.swift; sourceTree = "<group>"; };
+		B401DC8A2C41CA4D0032DD14 /* SpatialObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialObjectsView.swift; sourceTree = "<group>"; };
 		B402095B2C3F053E00D6C61D /* Catalogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B402095F2C3F053E00D6C61D /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		B40209622C3F053E00D6C61D /* CatalogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogsApp.swift; sourceTree = "<group>"; };
@@ -106,6 +152,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B401DC6E2C41A8120032DD14 /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				B401DC5D2C41A8120032DD14 /* Directors Chair.usdz */,
+				B401DC5E2C41A8120032DD14 /* Nike Pegasus.usdz */,
+				B401DC5F2C41A8120032DD14 /* Toy Biplane_full.png */,
+				B401DC602C41A8120032DD14 /* Toy Biplane.png */,
+				B401DC612C41A8120032DD14 /* Toy Biplane.usdz */,
+				B401DC622C41A8120032DD14 /* Toy Car_full.png */,
+				B401DC632C41A8120032DD14 /* Toy Car.png */,
+				B401DC642C41A8120032DD14 /* Toy Car.usdz */,
+				B401DC652C41A8120032DD14 /* Toy Drummer.usdz */,
+				B401DC662C41A8120032DD14 /* Toy Robot_full.png */,
+				B401DC672C41A8120032DD14 /* Toy Robot.png */,
+				B401DC682C41A8120032DD14 /* Toy Robot.usdz */,
+				B401DC692C41A8120032DD14 /* Toy Rocket_full.png */,
+				B401DC6A2C41A8120032DD14 /* Toy Rocket.png */,
+				B401DC6B2C41A8120032DD14 /* Toy Rocket.usdz */,
+				B401DC6C2C41A8120032DD14 /* TV Set.usdz */,
+				B401DC6D2C41A8120032DD14 /* Watering Can.usdz */,
+			);
+			path = "3D Models";
+			sourceTree = "<group>";
+		};
 		B40209522C3F053E00D6C61D = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +199,14 @@
 			isa = PBXGroup;
 			children = (
 				B4F2BD142C3F150700388EDF /* Model */,
-				B40209622C3F053E00D6C61D /* CatalogsApp.swift */,
-				B40209642C3F053E00D6C61D /* ContentView.swift */,
 				B4F2BD1B2C3F32F700388EDF /* CatalogsViewModel.swift */,
+				B40209622C3F053E00D6C61D /* CatalogsApp.swift */,
+				B401DC8A2C41CA4D0032DD14 /* SpatialObjectsView.swift */,
+				B40209642C3F053E00D6C61D /* ContentView.swift */,
 				B4F2BD0D2C3F0AB600388EDF /* BooksBrowser.swift */,
+				B401DC882C41C0EA0032DD14 /* ListImage.swift */,
+				B401DC842C41B7DC0032DD14 /* ObjectsBrowser.swift */,
+				B401DC862C41B81A0032DD14 /* SettingsBrowser.swift */,
 				B4C79E182C405EE400807F91 /* BookDetail.swift */,
 				B4C79E162C405AA500807F91 /* CompletionProgressViewStyle.swift */,
 				B40209682C3F054000D6C61D /* Assets.xcassets */,
@@ -194,9 +268,12 @@
 			children = (
 				B4F2BD102C3F14AB00388EDF /* BookCatalog.json */,
 				B4F2BD0F2C3F14AB00388EDF /* ObjectCatalog.json */,
+				B401DC802C41B18C0032DD14 /* SpatialObject.swift */,
+				B401DC822C41B2310032DD14 /* SpatialObjectCatalog.swift */,
 				B4F2BD152C3F158700388EDF /* Book.swift */,
 				B4F2BD192C3F1EEB00388EDF /* BookCatalog.swift */,
 				B4F2BD172C3F1E6100388EDF /* DataStore.swift */,
+				B401DC6E2C41A8120032DD14 /* 3D Models */,
 				B4C79E052C40306800807F91 /* Cover Images */,
 			);
 			path = Model;
@@ -287,14 +364,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C79E0A2C40306800807F91 /* Julius Caesar.jpg in Resources */,
+				B401DC782C41A8120032DD14 /* Toy Robot_full.png in Resources */,
+				B401DC722C41A8120032DD14 /* Toy Biplane.png in Resources */,
 				B402096C2C3F054000D6C61D /* Preview Assets.xcassets in Resources */,
+				B401DC7A2C41A8120032DD14 /* Toy Robot.usdz in Resources */,
+				B401DC7C2C41A8120032DD14 /* Toy Rocket.png in Resources */,
 				B4F2BD112C3F14AB00388EDF /* ObjectCatalog.json in Resources */,
+				B401DC7F2C41A8120032DD14 /* Watering Can.usdz in Resources */,
 				B4C79E062C40306800807F91 /* 1984.jpg in Resources */,
+				B401DC702C41A8120032DD14 /* Nike Pegasus.usdz in Resources */,
 				B4C79E0C2C40306800807F91 /* Pride and Prejudice.jpg in Resources */,
+				B401DC772C41A8120032DD14 /* Toy Drummer.usdz in Resources */,
 				B4C79E0E2C40306800807F91 /* The Brothers Karamozov.jpg in Resources */,
 				B4C79E0B2C40306800807F91 /* Much Ado About Nothing.jpg in Resources */,
+				B401DC7B2C41A8120032DD14 /* Toy Rocket_full.png in Resources */,
 				B4C79E152C40306800807F91 /* War of the Worlds.jpg in Resources */,
+				B401DC762C41A8120032DD14 /* Toy Car.usdz in Resources */,
+				B401DC7D2C41A8120032DD14 /* Toy Rocket.usdz in Resources */,
+				B401DC732C41A8120032DD14 /* Toy Biplane.usdz in Resources */,
+				B401DC6F2C41A8120032DD14 /* Directors Chair.usdz in Resources */,
+				B401DC792C41A8120032DD14 /* Toy Robot.png in Resources */,
 				B4C79E072C40306800807F91 /* Anna Karenina.jpg in Resources */,
+				B401DC742C41A8120032DD14 /* Toy Car_full.png in Resources */,
 				B4C79E122C40306800807F91 /* The Time Machine.jpg in Resources */,
 				B4F2BD122C3F14AB00388EDF /* BookCatalog.json in Resources */,
 				B4C79E102C40306800807F91 /* The Odyssey.jpg in Resources */,
@@ -304,7 +395,10 @@
 				B4C79E0D2C40306800807F91 /* Romeo and Juliet.jpg in Resources */,
 				B4C79E132C40306800807F91 /* Treasure Island.jpg in Resources */,
 				B40209692C3F054000D6C61D /* Assets.xcassets in Resources */,
+				B401DC752C41A8120032DD14 /* Toy Car.png in Resources */,
 				B4C79E0F2C40306800807F91 /* The Iliad.jpg in Resources */,
+				B401DC7E2C41A8120032DD14 /* TV Set.usdz in Resources */,
+				B401DC712C41A8120032DD14 /* Toy Biplane_full.png in Resources */,
 				B4C79E092C40306800807F91 /* Great Expectations.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,15 +417,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B401DC832C41B2310032DD14 /* SpatialObjectCatalog.swift in Sources */,
+				B401DC892C41C0EA0032DD14 /* ListImage.swift in Sources */,
 				B4F2BD162C3F158700388EDF /* Book.swift in Sources */,
 				B4F2BD1C2C3F32F700388EDF /* CatalogsViewModel.swift in Sources */,
 				B4F2BD0E2C3F0AB600388EDF /* BooksBrowser.swift in Sources */,
 				B40209652C3F053E00D6C61D /* ContentView.swift in Sources */,
+				B401DC852C41B7DC0032DD14 /* ObjectsBrowser.swift in Sources */,
+				B401DC872C41B81A0032DD14 /* SettingsBrowser.swift in Sources */,
 				B4F2BD182C3F1E6100388EDF /* DataStore.swift in Sources */,
 				B4C79E192C405EE400807F91 /* BookDetail.swift in Sources */,
 				B4C79E172C405AA500807F91 /* CompletionProgressViewStyle.swift in Sources */,
 				B4F2BD1A2C3F1EEB00388EDF /* BookCatalog.swift in Sources */,
+				B401DC8B2C41CA4D0032DD14 /* SpatialObjectsView.swift in Sources */,
 				B40209632C3F053E00D6C61D /* CatalogsApp.swift in Sources */,
+				B401DC812C41B18C0032DD14 /* SpatialObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
